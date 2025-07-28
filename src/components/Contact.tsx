@@ -16,8 +16,8 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "badr.moutaouakil@example.com",
-      href: "mailto:badr.moutaouakil@example.com",
+      value: "badr.moutaouakil@gmail.com",
+      href: "mailto:badr.moutaouakil@gmail.com",
       gradient: "bg-gradient-primary"
     },
     {
@@ -31,7 +31,7 @@ const Contact = () => {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
       value: "Had Soualem, Morocco",
-      href: "#",
+      href: "https://maps.google.com/?q=Had+Soualem,+Morocco",
       gradient: "bg-tech-cyan"
     }
   ];
@@ -40,19 +40,19 @@ const Contact = () => {
     {
       icon: <Github className="h-6 w-6" />,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/badrmoutaouakil",
       color: "hover:bg-tech-blue/20"
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn", 
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/badr-moutaouakil",
       color: "hover:bg-tech-cyan/20"
     },
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      href: "mailto:badr.moutaouakil@example.com",
+      href: "mailto:badr.moutaouakil@gmail.com",
       color: "hover:bg-tech-purple/20"
     }
   ];

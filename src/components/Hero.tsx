@@ -70,7 +70,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/badrmoutaouakil"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-tech-blue/20 transition-all duration-300 hover:scale-110 glow-button"
@@ -79,7 +79,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/badr-moutaouakil"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-tech-blue/20 transition-all duration-300 hover:scale-110 glow-button"
@@ -88,7 +88,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="mailto:badr@example.com"
+              href="mailto:badr.moutaouakil@gmail.com"
               className="p-3 rounded-full bg-card/50 backdrop-blur-sm hover:bg-tech-blue/20 transition-all duration-300 hover:scale-110 glow-button"
             >
               <Mail className="h-6 w-6" />
