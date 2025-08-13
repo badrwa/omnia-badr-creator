@@ -49,9 +49,9 @@ const translations = {
     'about.education.title2': 'Specialized Technician Diploma in Software Development', 
     'about.education.status2': 'OMNIA School of Business & Technology, Casablanca (Completed)',
     'about.education.desc2': 'Intensive program mastering full-stack development, database architecture, and modern software engineering practices.',
-    'about.education.title3': 'Baccalaureate in Science',
+    'about.education.title3': 'Baccalaureate in Science Physics',
     'about.education.status3': 'Lycée Oulad Hriz Had Soualem (2020)',
-    'about.education.desc3': 'Scientific track with focus on mathematics and physics.',
+    'about.education.desc3': 'Scientific track with specialized focus on physics and advanced mathematics.',
     
     // Skills Section
     'skills.frontend.items': 'HTML, CSS, JavaScript, React + Vite, Bootstrap, PHP (Laravel Blade)',
@@ -147,9 +147,9 @@ const translations = {
     'about.education.title2': 'Diplôme de Technicien Spécialisé en Développement de Logiciels',
     'about.education.status2': 'École OMNIA Business & Technology, Casablanca (Complété)',
     'about.education.desc2': 'Programme intensif maîtrisant le développement full-stack, l\'architecture de base de données et les pratiques modernes d\'ingénierie logicielle.',
-    'about.education.title3': 'Baccalauréat Sciences',
+    'about.education.title3': 'Baccalauréat Sciences Physiques',
     'about.education.status3': 'Lycée Oulad Hriz Had Soualem (2020)',
-    'about.education.desc3': 'Filière scientifique avec focus sur les mathématiques et la physique.',
+    'about.education.desc3': 'Filière scientifique avec spécialisation en physique et mathématiques avancées.',
     
     // Skills Section
     'skills.frontend.items': 'HTML, CSS, JavaScript, React + Vite, Bootstrap, PHP (Laravel Blade)',

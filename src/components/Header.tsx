@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Header = () => {
   const { t } = useLanguage();
@@ -62,10 +64,10 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
-            <Button variant="premium" size="sm" className="ml-6">
-              <Download className="w-4 h-4" />
-              {t('nav.resume')}
-            </Button>
+            <div className="flex items-center space-x-2 ml-6">
+              <LanguageSwitcher />
+              <ThemeSwitcher />
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -95,10 +97,10 @@ const Header = () => {
                   </span>
                 </button>
               ))}
-              <Button variant="premium" size="sm" className="w-fit mt-4">
-                <Download className="w-4 h-4" />
-                {t('nav.resume')}
-              </Button>
+              <div className="flex items-center space-x-2 w-fit mt-4">
+                <LanguageSwitcher />
+                <ThemeSwitcher />
+              </div>
             </div>
           </nav>
         )}
