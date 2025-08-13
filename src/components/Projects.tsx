@@ -169,7 +169,7 @@ const Projects = () => {
                       <div className="space-y-4">
                         <h4 className="text-xl font-bold text-foreground flex items-center gap-3">
                           <Code2 className="w-5 h-5 text-primary" />
-                          Technology Stack
+                          {t('skills.tech.stack')}
                         </h4>
                         <div className="flex flex-wrap gap-3">
                           {project.techStack.map((tech) => (
@@ -184,7 +184,7 @@ const Projects = () => {
                       <div className="space-y-4">
                         <h4 className="text-xl font-bold text-foreground flex items-center gap-3">
                           <Shield className="w-5 h-5 text-accent" />
-                          Key Features
+                          {t('skills.key.features')}
                         </h4>
                         <ul className="space-y-3">
                           {project.features.slice(0, 3).map((feature, featureIndex) => (

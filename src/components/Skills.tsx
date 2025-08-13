@@ -95,8 +95,8 @@ const Skills = () => {
   ];
 
   const languages = [
-    { name: "Arabic", level: "Native", percentage: 100 },
-    { name: "English", level: "Working Proficiency", percentage: 75 }
+    { name: t('skills.language.arabic'), level: t('skills.language.native'), percentage: 100 },
+    { name: t('skills.language.english'), level: t('skills.language.working'), percentage: 75 }
   ];
 
   return (
@@ -133,7 +133,7 @@ const Skills = () => {
                   </div>
                   <div>
                     <CardTitle className="text-2xl font-bold text-foreground">{category.title}</CardTitle>
-                    <p className="text-muted-foreground text-sm">Specialized expertise</p>
+                    <p className="text-muted-foreground text-sm">{t('skills.specialization')}</p>
                   </div>
                 </div>
               </CardHeader>
@@ -183,7 +183,7 @@ const Skills = () => {
                 <Globe className="w-8 h-8" />
               </div>
               <CardTitle className="text-3xl font-bold">{t('skills.languages')}</CardTitle>
-              <p className="text-muted-foreground">Communication across cultures</p>
+              <p className="text-muted-foreground">{t('skills.communication')}</p>
             </CardHeader>
             <CardContent>
               <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
@@ -220,7 +220,7 @@ const Skills = () => {
             </div>
             <h3 className="font-bold text-xl mb-4 text-foreground">{t('skills.design')}</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Strong understanding of UI/UX principles, modern design patterns, and user-centered thinking in development.
+              {t('skills.design.desc')}
             </p>
           </Card>
           
@@ -230,7 +230,7 @@ const Skills = () => {
             </div>
             <h3 className="font-bold text-xl mb-4 text-foreground">{t('skills.problem')}</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Advanced analytical thinking, systematic debugging, and creative solution-finding for complex technical challenges.
+              {t('skills.problem.desc')}
             </p>
           </Card>
           
@@ -240,7 +240,7 @@ const Skills = () => {
             </div>
             <h3 className="font-bold text-xl mb-4 text-foreground">{t('skills.quality')}</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Commitment to writing clean, maintainable, well-documented code following industry best practices and standards.
+              {t('skills.quality.desc')}
             </p>
           </Card>
         </div>
