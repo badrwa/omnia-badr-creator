@@ -1,12 +1,34 @@
 import { Button } from "@/components/ui/button";
-import { Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Moon, Sun, Monitor } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    if (theme === 'light') {
+      setTheme('dark');
+    } else if (theme === 'dark') {
+      setTheme('system');
+    } else {
+      setTheme('light');
+    }
+  };
+
+  const getIcon = () => {
+    if (theme === 'light') {
+      return <Sun className="h-5 w-5" />;
+    } else if (theme === 'dark') {
+      return <Moon className="h-5 w-5" />;
+    } else {
+      return <Monitor className="h-5 w-5" />;
+    }
+  };
+
+  const getTitle = () => {
+    if (theme === 'light') return 'Switch to Dark mode';
+    if (theme === 'dark') return 'Switch to System mode';
+    return 'Switch to Light mode';
   };
 
   return (
@@ -15,10 +37,9 @@ const ThemeSwitcher = () => {
       size="icon"
       onClick={toggleTheme}
       className="hover-glow group relative"
-      title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
+      title={getTitle()}
     >
-      <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      {getIcon()}
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
