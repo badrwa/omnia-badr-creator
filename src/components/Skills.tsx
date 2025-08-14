@@ -3,7 +3,7 @@ import {
   Code, 
   Server, 
   Database, 
-  Settings, 
+  Wrench, 
   Globe,
   Palette,
   Coffee,
@@ -57,7 +57,7 @@ const Skills = () => {
     },
     {
       title: t('skills.tools'),
-      icon: <Settings className="w-7 h-7" />,
+      icon: <Wrench className="w-7 h-7" />,
       gradient: "from-orange-500 to-red-500",
       skills: [
         { name: "VS Code", level: "Advanced", description: "Advanced IDE workflows" },
