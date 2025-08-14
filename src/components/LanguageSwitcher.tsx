@@ -1,27 +1,58 @@
 import { Button } from "@/components/ui/button";
-import { Languages } from "lucide-react";
-import { useLanguage, Language } from "@/contexts/LanguageContext";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Languages, Check, ChevronDown } from "lucide-react";
+import { useLanguage, type Language } from "@/contexts/LanguageContext";
 
 const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'fr' : 'en');
-  };
+  const languages = [
+    { code: 'en' as Language, name: 'English', flag: '🇺🇸' },
+    { code: 'fr' as Language, name: 'Français', flag: '🇫🇷' },
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === language);
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={toggleLanguage}
-      className="hover-glow group relative"
-      title={`Switch to ${language === 'en' ? 'Français' : 'English'}`}
-    >
-      <Languages className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-      <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background border border-border rounded px-2 py-1 whitespace-nowrap">
-        {language.toUpperCase()}
-      </span>
-    </Button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="hover-glow group relative h-9 gap-2"
+          title="Select Language"
+        >
+          <Languages className="h-4 w-4" />
+          <span className="text-sm font-medium">{currentLanguage?.flag}</span>
+          <ChevronDown className="h-3 w-3 opacity-60" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent 
+        className="w-40 bg-background/95 backdrop-blur-md border border-border/40 shadow-lg z-50"
+        align="end"
+      >
+        {languages.map((lang) => (
+          <DropdownMenuItem
+            key={lang.code}
+            onClick={() => setLanguage(lang.code)}
+            className="flex items-center justify-between cursor-pointer hover:bg-accent/50"
+          >
+            <div className="flex items-center gap-2">
+              <span>{lang.flag}</span>
+              <span className="text-sm">{lang.name}</span>
+            </div>
+            {language === lang.code && (
+              <Check className="h-3 w-3 text-primary" />
+            )}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };
 
