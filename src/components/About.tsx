@@ -7,11 +7,17 @@ const About = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="about" className="py-32 bg-gradient-card relative overflow-hidden">
-      {/* Background Elements */}
+    <section id="about" className="py-32 bg-gradient-to-br from-background via-primary/3 to-accent/5 relative overflow-hidden">
+      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-r from-primary/8 to-accent/6 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-r from-accent/6 to-secondary/8 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gradient-to-r from-secondary/5 to-primary/7 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }}></div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-1/4 left-1/4 w-6 h-6 border-2 border-primary/20 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/5 w-4 h-4 bg-accent/30 rotate-45 animate-bounce" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-3/4 left-1/6 w-3 h-3 bg-secondary/40 rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
