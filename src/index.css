@@ -89,7 +89,7 @@
   }
 
   .dark {
-    /* Dark Mode - Deep Navy Theme */
+    /* Dark Mode - Already Perfect */
     --background: 8 15 31;
     --foreground: 241 245 249;
     
@@ -135,11 +135,11 @@
     --gradient-accent: linear-gradient(90deg, hsl(168 85 247), hsl(52 211 153), hsl(196 181 253));
     --gradient-mesh: linear-gradient(135deg, hsl(96 165 250 / 0.05), hsl(168 85 247 / 0.05), hsl(52 211 153 / 0.03));
     
-    /* Dark Mode Shadows */
-    --shadow-card: 0 8px 30px hsl(8 15 31 / 0.4), 0 4px 12px hsl(8 15 31 / 0.2);
-    --shadow-elegant: 0 20px 25px -5px hsl(96 165 250 / 0.2), 0 10px 10px -5px hsl(168 85 247 / 0.1);
-    --shadow-glow: 0 0 30px hsl(96 165 250 / 0.4), 0 0 60px hsl(168 85 247 / 0.3);
-    --shadow-neon: 0 0 15px hsl(96 165 250 / 0.6), 0 0 30px hsl(168 85 247 / 0.4);
+    /* Bold Dark Mode Shadows with Electric Colors */
+    --shadow-card: 0 8px 30px hsl(14 165 233 / 0.3), 0 4px 12px hsl(249 115 22 / 0.2);
+    --shadow-elegant: 0 20px 25px -5px hsl(14 165 233 / 0.4), 0 10px 10px -5px hsl(249 115 22 / 0.2);
+    --shadow-glow: 0 0 30px hsl(14 165 233 / 0.6), 0 0 60px hsl(249 115 22 / 0.4);
+    --shadow-neon: 0 0 15px hsl(14 165 233 / 0.8), 0 0 30px hsl(249 115 22 / 0.6);
   }
 }
 
