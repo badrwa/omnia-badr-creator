@@ -8,36 +8,36 @@
 
 @layer base {
   :root {
-    /* Modern Minimalist Color Palette */
-    --background: 250 250 252;
-    --foreground: 15 23 42;
+    /* Professional Business Color Palette */
+    --background: 249 250 251;
+    --foreground: 30 41 59;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 30 41 59;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 30 41 59;
 
-    /* Primary - Ocean Blue */
-    --primary: 59 130 246;
+    /* Primary - Professional Navy */
+    --primary: 30 58 138;
     --primary-foreground: 255 255 255;
-    --primary-glow: 96 165 250;
-    --primary-dark: 29 78 216;
+    --primary-glow: 59 130 246;
+    --primary-dark: 15 32 85;
     --primary-light: 147 197 253;
 
-    /* Secondary - Emerald Green */
-    --secondary: 16 185 129;
+    /* Secondary - Charcoal Gray */
+    --secondary: 71 85 105;
     --secondary-foreground: 255 255 255;
-    --secondary-dark: 5 150 105;
+    --secondary-dark: 51 65 85;
 
-    /* Muted - Refined Grays */
+    /* Muted - Professional Grays */
     --muted: 241 245 249;
     --muted-foreground: 100 116 139;
 
-    /* Accent - Violet Purple */
-    --accent: 139 92 246;
+    /* Accent - Subtle Blue */
+    --accent: 59 130 246;
     --accent-foreground: 255 255 255;
-    --accent-secondary: 168 85 247;
+    --accent-secondary: 96 165 250;
 
     /* System Colors */
     --destructive: 239 68 68;
@@ -54,21 +54,21 @@
     --hero-text: 15 23 42;
     --hero-accent: 139 92 246;
     
-    /* Modern Clean Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(59 130 246) 0%, hsl(139 92 246) 50%, hsl(16 185 129) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(248 250 252) 0%, hsl(241 245 249) 30%, hsl(226 232 240) 70%, hsl(248 250 252) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(255 255 255) 0%, hsl(248 250 252) 50%, hsl(241 245 249) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(139 92 246), hsl(16 185 129), hsl(168 85 247));
-    --gradient-border: linear-gradient(90deg, hsl(59 130 246 / 0.3), hsl(139 92 246 / 0.3), hsl(16 185 129 / 0.2));
-    --gradient-mesh: linear-gradient(135deg, hsl(59 130 246 / 0.03), hsl(139 92 246 / 0.03), hsl(16 185 129 / 0.02));
+    /* Subtle Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(30 58 138) 0%, hsl(59 130 246) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(249 250 251) 0%, hsl(241 245 249) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(255 255 255) 0%, hsl(249 250 251) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(30 58 138), hsl(59 130 246));
+    --gradient-border: linear-gradient(90deg, hsl(30 58 138 / 0.2), hsl(59 130 246 / 0.1));
+    --gradient-mesh: linear-gradient(135deg, hsl(30 58 138 / 0.02), hsl(59 130 246 / 0.01));
     
-    /* Clean Modern Shadows */
-    --shadow-elegant: 0 20px 25px -5px hsl(59 130 246 / 0.1), 0 10px 10px -5px hsl(59 130 246 / 0.04);
-    --shadow-glow: 0 0 30px hsl(59 130 246 / 0.3), 0 0 60px hsl(139 92 246 / 0.2);
-    --shadow-card: 0 4px 6px -1px hsl(15 23 42 / 0.1), 0 2px 4px -1px hsl(15 23 42 / 0.06);
-    --shadow-soft: 0 1px 3px 0 hsl(15 23 42 / 0.1), 0 1px 2px 0 hsl(15 23 42 / 0.06);
-    --shadow-inner: inset 0 2px 4px hsl(59 130 246 / 0.06);
-    --shadow-neon: 0 0 15px hsl(59 130 246 / 0.4), 0 0 30px hsl(139 92 246 / 0.3);
+    /* Professional Subtle Shadows */
+    --shadow-elegant: 0 10px 15px -3px hsl(30 41 59 / 0.1), 0 4px 6px -2px hsl(30 41 59 / 0.05);
+    --shadow-glow: 0 0 20px hsl(30 58 138 / 0.15);
+    --shadow-card: 0 4px 6px -1px hsl(30 41 59 / 0.1), 0 2px 4px -1px hsl(30 41 59 / 0.06);
+    --shadow-soft: 0 1px 3px 0 hsl(30 41 59 / 0.1), 0 1px 2px 0 hsl(30 41 59 / 0.06);
+    --shadow-inner: inset 0 2px 4px hsl(30 58 138 / 0.04);
+    --shadow-neon: 0 0 10px hsl(30 58 138 / 0.2);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
