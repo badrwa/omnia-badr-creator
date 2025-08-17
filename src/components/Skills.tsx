@@ -100,17 +100,17 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-32 bg-gradient-to-br from-background via-accent/3 to-primary/5 relative overflow-hidden">
-      {/* Enhanced Background Elements */}
+    <section id="skills" className="py-32 bg-gradient-to-br from-muted/20 via-background to-accent/5 relative overflow-hidden">
+      {/* Industrial Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-gradient-to-r from-primary/8 to-accent/6 rounded-full blur-3xl animate-float opacity-70"></div>
-        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-gradient-to-r from-accent/6 to-secondary/8 rounded-full blur-3xl animate-float opacity-60" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-r from-secondary/5 to-primary/7 rounded-full blur-2xl animate-float opacity-50" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-gradient-to-r from-primary/12 to-accent/8 rounded-none blur-2xl opacity-70"></div>
+        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-gradient-to-r from-accent/8 to-secondary/12 rounded-none blur-2xl opacity-60"></div>
+        <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-r from-secondary/8 to-primary/10 rounded-none blur-xl opacity-50"></div>
         
-        {/* Floating Technical Elements */}
-        <div className="absolute top-20 right-20 w-8 h-8 border-2 border-primary/20 rounded-lg rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute bottom-1/3 left-10 w-6 h-6 bg-accent/30 rounded-full animate-bounce" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-2/3 right-1/4 w-4 h-4 bg-secondary/40 rotate-45 animate-bounce" style={{ animationDelay: '1s' }}></div>
+        {/* Tech Grid Elements */}
+        <div className="absolute top-20 right-20 w-8 h-8 border-2 border-primary/30 rounded-none rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-1/3 left-10 w-6 h-6 bg-accent/40 rounded-none animate-bounce" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-4 h-4 bg-secondary/50 rounded-none rotate-45 animate-bounce" style={{ animationDelay: '1s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">

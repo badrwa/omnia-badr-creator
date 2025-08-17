@@ -59,19 +59,19 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-32 relative overflow-hidden bg-gradient-to-br from-background via-background/50 to-primary/5">
-      {/* Creative Background Elements */}
+    <section id="projects" className="py-32 relative overflow-hidden bg-gradient-to-br from-card via-background to-primary/8">
+      {/* Bold Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/3 w-72 h-72 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-accent/8 to-secondary/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/6 w-48 h-48 bg-gradient-to-r from-secondary/12 to-primary/12 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/3 w-72 h-72 bg-gradient-to-r from-primary/20 to-accent/15 rounded-none blur-2xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-gradient-to-r from-accent/15 to-secondary/20 rounded-none blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/6 w-48 h-48 bg-gradient-to-r from-secondary/20 to-primary/25 rounded-none blur-xl"></div>
       </div>
 
-      {/* Floating Geometric Shapes */}
+      {/* Sharp Geometric Shapes */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 right-20 w-4 h-4 bg-primary/30 rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-        <div className="absolute top-1/3 left-10 w-3 h-3 bg-accent/40 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
-        <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-secondary/50 rotate-45 animate-bounce" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute top-20 right-20 w-4 h-4 bg-primary/40 rounded-none rotate-45 animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 left-10 w-3 h-3 bg-accent/50 rounded-none animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-secondary/60 rounded-none rotate-45 animate-bounce" style={{ animationDelay: '2.5s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">

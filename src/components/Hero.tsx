@@ -17,10 +17,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden bg-gradient-to-br from-hero-bg via-background to-muted/20"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Clean Modern Background */}
-      <div className="absolute inset-0 bg-gradient-mesh"></div>
+      {/* Subtle Tech Background */}
+      <div className="absolute inset-0 bg-muted/30"></div>
       
       {/* Refined Background Image */}
       <div className="absolute inset-0 z-0">
@@ -56,28 +56,28 @@ const Hero = () => {
                {/* Clean Modern Profile Photo */}
                <div className="relative mx-auto lg:mx-0 w-fit">
                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
-                   {/* Elegant Profile Ring */}
-                   <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full p-4 shadow-elegant">
-                     <div className="w-full h-full bg-background rounded-full p-3 shadow-inner">
-                       <div className="relative w-full h-full rounded-full overflow-hidden group">
-                         <img 
-                           src={profilePhoto}
-                           alt="Badr Moutaouakil - Profile" 
-                           className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
-                         />
-                         <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-                       </div>
-                     </div>
-                   </div>
-                   
-                   {/* Clean Achievement Badges */}
-                   <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center shadow-card hover:shadow-elegant transition-all duration-300 cursor-pointer">
-                     <GraduationCap className="w-8 h-8 text-white" />
-                   </div>
-                   
-                   <div className="absolute -bottom-4 -left-4 w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-card hover:shadow-elegant transition-all duration-300 cursor-pointer">
-                     <Trophy className="w-7 h-7 text-white" />
-                   </div>
+                    {/* Bold Tech Ring */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full p-4 shadow-glow">
+                      <div className="w-full h-full bg-card rounded-full p-3 shadow-inner">
+                        <div className="relative w-full h-full rounded-full overflow-hidden group">
+                          <img 
+                            src={profilePhoto}
+                            alt="Badr Moutaouakil - Profile" 
+                            className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Tech Achievement Badges */}
+                    <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center shadow-glow hover:shadow-neon transition-all duration-300 cursor-pointer">
+                      <GraduationCap className="w-8 h-8 text-white" />
+                    </div>
+                    
+                    <div className="absolute -bottom-4 -left-4 w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center shadow-glow hover:shadow-neon transition-all duration-300 cursor-pointer">
+                      <Trophy className="w-7 h-7 text-white" />
+                    </div>
                  </div>
                </div>
 
