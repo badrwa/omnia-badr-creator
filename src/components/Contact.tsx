@@ -132,9 +132,9 @@ const Contact = () => {
             <Card className="glass-card shadow-soft hover-glow">
               <CardHeader className="pb-6">
                 <CardTitle className="flex items-center gap-3 text-2xl">
-                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-neon border-2 border-primary/40">
-                      <Mail className="w-6 h-6 text-primary-foreground" />
-                    </div>
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-soft">
+                    <Mail className="w-6 h-6 text-primary-foreground" />
+                  </div>
                   {t('contact.info.title')}
                 </CardTitle>
                 <p className="text-muted-foreground">{t('contact.info.subtitle')}</p>
@@ -148,7 +148,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 rounded-xl bg-card/30 border border-border/20 hover:bg-card/50 hover:border-primary/30 transition-all duration-300 group"
                   >
-                     <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center text-accent-foreground group-hover:scale-110 transition-transform duration-300 shadow-glow border-2 border-accent/30">
+                    <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center text-secondary group-hover:scale-110 transition-transform duration-300">
                       {info.icon}
                     </div>
                     <div>
