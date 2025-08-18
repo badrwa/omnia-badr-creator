@@ -18,26 +18,26 @@
     --popover: 24 24 27;
     --popover-foreground: 250 250 250;
 
-    /* Primary - Steel Blue */
-    --primary: 14 165 233;
-    --primary-foreground: 15 15 17;
-    --primary-glow: 56 189 248;
-    --primary-dark: 2 132 199;
-    --primary-light: 125 211 252;
+    /* Primary - Neon Cyan */
+    --primary: 6 182 212;
+    --primary-foreground: 8 8 12;
+    --primary-glow: 34 211 238;
+    --primary-dark: 14 116 144;
+    --primary-light: 103 232 249;
 
-    /* Secondary - Gunmetal */
-    --secondary: 82 82 91;
-    --secondary-foreground: 250 250 250;
-    --secondary-dark: 63 63 70;
+    /* Secondary - Electric Purple */
+    --secondary: 147 51 234;
+    --secondary-foreground: 248 248 248;
+    --secondary-dark: 109 40 217;
 
-    /* Muted - Dark Grays */
-    --muted: 39 39 42;
-    --muted-foreground: 161 161 170;
+    /* Muted - Industrial Grays */
+    --muted: 28 28 35;
+    --muted-foreground: 180 180 190;
 
-    /* Accent - Electric Orange */
-    --accent: 249 115 22;
-    --accent-foreground: 15 15 17;
-    --accent-secondary: 251 146 60;
+    /* Accent - Neon Orange */
+    --accent: 255 69 0;
+    --accent-foreground: 8 8 12;
+    --accent-secondary: 255 140 0;
 
     /* System Colors */
     --destructive: 239 68 68;
@@ -54,21 +54,21 @@
     --hero-text: 15 23 42;
     --hero-accent: 139 92 246;
     
-    /* Bold Industrial Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(14 165 233) 0%, hsl(249 115 22) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(15 15 17) 0%, hsl(24 24 27) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(24 24 27) 0%, hsl(39 39 42) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(14 165 233), hsl(249 115 22));
-    --gradient-border: linear-gradient(90deg, hsl(14 165 233 / 0.3), hsl(249 115 22 / 0.2));
-    --gradient-mesh: linear-gradient(135deg, hsl(14 165 233 / 0.05), hsl(249 115 22 / 0.03));
+    /* Neon Industrial Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(6 182 212) 0%, hsl(147 51 234) 50%, hsl(255 69 0) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(8 8 12) 0%, hsl(15 15 17) 30%, hsl(28 28 35) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(15 15 17) 0%, hsl(28 28 35) 50%, hsl(147 51 234 / 0.1) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(6 182 212), hsl(147 51 234), hsl(255 69 0));
+    --gradient-border: linear-gradient(90deg, hsl(6 182 212 / 0.6), hsl(147 51 234 / 0.4), hsl(255 69 0 / 0.3));
+    --gradient-mesh: linear-gradient(135deg, hsl(6 182 212 / 0.08), hsl(147 51 234 / 0.06), hsl(255 69 0 / 0.04));
     
-    /* Strong Industrial Shadows */
-    --shadow-elegant: 0 25px 50px -12px hsl(15 15 17 / 0.5), 0 0 30px hsl(14 165 233 / 0.1);
-    --shadow-glow: 0 0 40px hsl(14 165 233 / 0.3), 0 0 20px hsl(249 115 22 / 0.2);
-    --shadow-card: 0 8px 16px hsl(15 15 17 / 0.3), 0 4px 8px hsl(15 15 17 / 0.2);
-    --shadow-soft: 0 4px 8px hsl(15 15 17 / 0.2), 0 2px 4px hsl(15 15 17 / 0.1);
-    --shadow-inner: inset 0 2px 4px hsl(14 165 233 / 0.1);
-    --shadow-neon: 0 0 20px hsl(14 165 233 / 0.5), 0 0 10px hsl(249 115 22 / 0.3);
+    /* Neon Industrial Shadows */
+    --shadow-elegant: 0 25px 50px -12px hsl(8 8 12 / 0.7), 0 0 40px hsl(6 182 212 / 0.3), 0 0 20px hsl(147 51 234 / 0.2);
+    --shadow-glow: 0 0 60px hsl(6 182 212 / 0.5), 0 0 30px hsl(147 51 234 / 0.4), 0 0 15px hsl(255 69 0 / 0.3);
+    --shadow-card: 0 10px 25px hsl(8 8 12 / 0.4), 0 5px 15px hsl(6 182 212 / 0.2), 0 2px 8px hsl(147 51 234 / 0.1);
+    --shadow-soft: 0 6px 12px hsl(8 8 12 / 0.3), 0 3px 8px hsl(6 182 212 / 0.15);
+    --shadow-inner: inset 0 2px 8px hsl(6 182 212 / 0.2), inset 0 1px 4px hsl(147 51 234 / 0.1);
+    --shadow-neon: 0 0 30px hsl(6 182 212 / 0.8), 0 0 60px hsl(147 51 234 / 0.6), 0 0 90px hsl(255 69 0 / 0.4);
     
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,19 +105,19 @@
     --border: 30 41 59;
     --input: 30 41 59;
     
-    --primary: 96 165 250;
-    --primary-foreground: 8 15 31;
-    --primary-glow: 147 197 253;
-    --primary-dark: 59 130 246;
-    --primary-light: 191 219 254;
+    --primary: 34 211 238;
+    --primary-foreground: 3 7 18;
+    --primary-glow: 103 232 249;
+    --primary-dark: 8 145 178;
+    --primary-light: 165 243 252;
     
-    --secondary: 52 211 153;
-    --secondary-foreground: 8 15 31;
-    --secondary-dark: 16 185 129;
+    --secondary: 168 85 247;
+    --secondary-foreground: 3 7 18;
+    --secondary-dark: 124 58 237;
     
-    --accent: 168 85 247;
-    --accent-foreground: 8 15 31;
-    --accent-secondary: 196 181 253;
+    --accent: 255 140 0;
+    --accent-foreground: 3 7 18;
+    --accent-secondary: 255 200 87;
     
     --destructive: 248 113 113;
     --destructive-foreground: 8 15 31;
@@ -128,18 +128,18 @@
     --hero-text: 241 245 249;
     --hero-accent: 168 85 247;
     
-    /* Dark Mode Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(8 15 31) 0%, hsl(15 25 45) 30%, hsl(30 41 59) 70%, hsl(8 15 31) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(15 25 45) 0%, hsl(30 41 59) 50%, hsl(51 65 85) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(96 165 250) 0%, hsl(168 85 247) 50%, hsl(52 211 153) 100%);
-    --gradient-accent: linear-gradient(90deg, hsl(168 85 247), hsl(52 211 153), hsl(196 181 253));
-    --gradient-mesh: linear-gradient(135deg, hsl(96 165 250 / 0.05), hsl(168 85 247 / 0.05), hsl(52 211 153 / 0.03));
+    /* Dark Mode Neon Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(3 7 18) 0%, hsl(8 15 31) 20%, hsl(15 25 45) 40%, hsl(30 41 59) 80%, hsl(3 7 18) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(8 15 31) 0%, hsl(15 25 45) 30%, hsl(168 85 247 / 0.15) 70%, hsl(34 211 238 / 0.1) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(34 211 238) 0%, hsl(168 85 247) 30%, hsl(255 140 0) 60%, hsl(103 232 249) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(34 211 238), hsl(168 85 247), hsl(255 140 0), hsl(255 200 87));
+    --gradient-mesh: linear-gradient(135deg, hsl(34 211 238 / 0.12), hsl(168 85 247 / 0.08), hsl(255 140 0 / 0.06));
     
-    /* Bold Dark Mode Shadows with Electric Colors */
-    --shadow-card: 0 8px 30px hsl(14 165 233 / 0.3), 0 4px 12px hsl(249 115 22 / 0.2);
-    --shadow-elegant: 0 20px 25px -5px hsl(14 165 233 / 0.4), 0 10px 10px -5px hsl(249 115 22 / 0.2);
-    --shadow-glow: 0 0 30px hsl(14 165 233 / 0.6), 0 0 60px hsl(249 115 22 / 0.4);
-    --shadow-neon: 0 0 15px hsl(14 165 233 / 0.8), 0 0 30px hsl(249 115 22 / 0.6);
+    /* Dark Mode Neon Shadows with Triple Color System */
+    --shadow-card: 0 12px 35px hsl(34 211 238 / 0.4), 0 6px 20px hsl(168 85 247 / 0.3), 0 3px 10px hsl(255 140 0 / 0.2);
+    --shadow-elegant: 0 25px 50px hsl(34 211 238 / 0.5), 0 15px 30px hsl(168 85 247 / 0.4), 0 8px 20px hsl(255 140 0 / 0.3);
+    --shadow-glow: 0 0 40px hsl(34 211 238 / 0.7), 0 0 80px hsl(168 85 247 / 0.5), 0 0 120px hsl(255 140 0 / 0.4);
+    --shadow-neon: 0 0 20px hsl(34 211 238 / 0.9), 0 0 40px hsl(168 85 247 / 0.7), 0 0 80px hsl(255 140 0 / 0.5);
   }
 }
 

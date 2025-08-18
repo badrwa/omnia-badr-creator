@@ -132,9 +132,9 @@ const Contact = () => {
             <Card className="glass-card shadow-soft hover-glow">
               <CardHeader className="pb-6">
                 <CardTitle className="flex items-center gap-3 text-2xl">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-glow">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
+                     <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-neon border-2 border-primary/40">
+                      <Mail className="w-6 h-6 text-primary-foreground" />
+                    </div>
                   {t('contact.info.title')}
                 </CardTitle>
                 <p className="text-muted-foreground">{t('contact.info.subtitle')}</p>
@@ -148,7 +148,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 rounded-xl bg-card/30 border border-border/20 hover:bg-card/50 hover:border-primary/30 transition-all duration-300 group"
                   >
-                    <div className="w-12 h-12 bg-gradient-card rounded-lg flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                     <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center text-accent-foreground group-hover:scale-110 transition-transform duration-300 shadow-glow border-2 border-accent/30">
                       {info.icon}
                     </div>
                     <div>
@@ -174,7 +174,7 @@ const Contact = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="aspect-square bg-gradient-primary rounded-xl flex items-center justify-center text-white hover:scale-110 hover:shadow-glow transition-all duration-300 group"
+                      className="aspect-square bg-gradient-primary rounded-xl flex items-center justify-center text-primary-foreground hover:scale-110 hover:shadow-neon transition-all duration-300 group border-2 border-primary/40"
                       title={social.label}
                     >
                       <div className="group-hover:scale-110 transition-transform duration-300">
@@ -192,8 +192,8 @@ const Contact = () => {
             <Card className="glass-card shadow-soft hover-glow">
               <CardHeader className="pb-8">
                 <CardTitle className="flex items-center gap-3 text-2xl">
-                  <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center shadow-glow">
-                    <Send className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center shadow-neon border-2 border-accent/40">
+                    <Send className="w-6 h-6 text-accent-foreground" />
                   </div>
                   Send Message
                 </CardTitle>
