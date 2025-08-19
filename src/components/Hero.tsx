@@ -17,33 +17,44 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden bg-background"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden"
     >
-      {/* Subtle Tech Background */}
-      <div className="absolute inset-0 bg-muted/30"></div>
+      {/* Enhanced Background with Mesh Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-accent/3"></div>
       
-      {/* Refined Background Image */}
+      {/* Premium Background Image with Advanced Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
           alt="Hero Background" 
-          className="w-full h-full object-cover opacity-5"
+          className="w-full h-full object-cover opacity-15 mix-blend-multiply"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95"></div>
+        <div className="absolute inset-0 bg-gradient-mesh"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/90"></div>
       </div>
 
-      {/* Minimal Geometric Elements */}
+      {/* Advanced Geometric Background with Lighting Effects */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-gradient-to-r from-primary/6 to-accent/4 rounded-full blur-3xl animate-float opacity-60"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-gradient-to-r from-secondary/4 to-primary/5 rounded-full blur-3xl animate-float opacity-50" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-1/6 left-1/5 w-[600px] h-[600px] bg-gradient-to-r from-primary/8 to-accent/8 rounded-full blur-3xl animate-float opacity-80"></div>
+        <div className="absolute bottom-1/5 right-1/6 w-[500px] h-[500px] bg-gradient-to-r from-accent/6 to-secondary/6 rounded-full blur-3xl animate-float opacity-70" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-secondary/10 to-primary/10 rounded-full blur-2xl animate-float opacity-60" style={{ animationDelay: '4s' }}></div>
+        
+        {/* Advanced Light Rays */}
+        <div className="absolute top-0 left-1/4 w-1 h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent transform rotate-12 animate-pulse"></div>
+        <div className="absolute top-0 right-1/3 w-1 h-full bg-gradient-to-b from-transparent via-accent/15 to-transparent transform -rotate-12 animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      {/* Clean Floating Elements */}
+      {/* Enhanced Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-20 w-3 h-3 bg-primary/40 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-20 w-2 h-2 bg-accent/50 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 left-10 w-4 h-4 bg-secondary/30 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 right-1/4 w-6 h-6 border border-primary/20 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-20 left-20 w-4 h-4 bg-primary/50 rounded-full animate-bounce shadow-glow" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 right-20 w-3 h-3 bg-accent/60 rounded-full animate-bounce shadow-soft" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/4 left-10 w-5 h-5 bg-secondary/40 rounded-full animate-bounce shadow-soft" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-8 h-8 border-2 border-primary/30 rounded-full animate-pulse neon-glow" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-6 h-6 border-2 border-accent/40 rounded-full animate-pulse shadow-elegant" style={{ animationDelay: '1s' }}></div>
+        
+        {/* Geometric Shapes */}
+        <div className="absolute top-1/6 right-1/5 w-3 h-3 bg-primary/40 rotate-45 animate-bounce" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute bottom-1/6 left-1/4 w-4 h-4 bg-accent/30 rotate-45 animate-bounce" style={{ animationDelay: '2.2s' }}></div>
       </div>
 
       {/* Main Content */}
@@ -53,40 +64,50 @@ const Hero = () => {
             
             {/* Left Side - Profile & Intro */}
             <div className="space-y-8 animate-fade-in-up text-center lg:text-left">
-               {/* Clean Modern Profile Photo */}
+               {/* Enhanced Profile Photo with Premium Effects */}
                <div className="relative mx-auto lg:mx-0 w-fit">
                  <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-72 lg:h-72 xl:w-96 xl:h-96">
-                    {/* Bold Tech Ring */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full p-4 shadow-glow">
-                      <div className="w-full h-full bg-card rounded-full p-3 shadow-inner">
-                        <div className="relative w-full h-full rounded-full overflow-hidden group">
-                          <img 
-                            src={profilePhoto}
-                            alt="Badr Moutaouakil - Profile" 
-                            className="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Tech Achievement Badges */}
-                    <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center shadow-glow hover:shadow-neon transition-all duration-300 cursor-pointer">
-                      <GraduationCap className="w-8 h-8 text-white" />
-                    </div>
-                    
-                    <div className="absolute -bottom-4 -left-4 w-14 h-14 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center shadow-glow hover:shadow-neon transition-all duration-300 cursor-pointer">
-                      <Trophy className="w-7 h-7 text-white" />
-                    </div>
+                   {/* Main Profile Ring with Advanced Glow */}
+                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-full p-3 animate-pulse-glow shadow-neon">
+                     <div className="w-full h-full bg-background rounded-full p-3 shadow-inner">
+                       <div className="relative w-full h-full rounded-full overflow-hidden group">
+                         <img 
+                           src={profilePhoto}
+                           alt="Badr Moutaouakil - Profile" 
+                           className="w-full h-full object-cover rounded-full transition-transform duration-700 group-hover:scale-110"
+                         />
+                         {/* Overlay Effect */}
+                         <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   {/* Floating Achievement Badges */}
+                   <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center shadow-neon animate-float group cursor-pointer">
+                     <GraduationCap className="w-10 h-10 text-white group-hover:scale-125 transition-transform duration-300" />
+                     <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-full blur-xl animate-pulse"></div>
+                   </div>
+                   
+                   <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-elegant animate-float group cursor-pointer" style={{ animationDelay: '1s' }}>
+                     <Trophy className="w-8 h-8 text-white group-hover:scale-125 transition-transform duration-300" />
+                     <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl animate-pulse"></div>
+                   </div>
+                   
+                   {/* Additional Decorative Elements */}
+                   <div className="absolute top-1/4 -left-8 w-4 h-4 bg-accent/60 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+                   <div className="absolute bottom-1/4 -right-8 w-3 h-3 bg-primary/50 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
                  </div>
                </div>
 
-               {/* Modern Status Badge */}
+               {/* Enhanced Status Badge */}
                <div className="text-center lg:text-left">
-                 <div className="inline-flex items-center gap-3 px-6 py-3 bg-card/80 backdrop-blur-sm rounded-full border border-border shadow-soft hover:shadow-card transition-all duration-300">
-                   <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                   <span className="text-sm font-medium text-foreground">{t('hero.status')}</span>
-                   <Heart className="w-4 h-4 text-primary" />
+                 <div className="group inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-primary/15 via-accent/10 to-secondary/15 rounded-full backdrop-blur-xl border border-primary/30 shadow-elegant hover:shadow-glow transition-all duration-500 hover:scale-105">
+                   <div className="relative">
+                     <div className="w-4 h-4 bg-primary rounded-full animate-pulse shadow-glow"></div>
+                     <div className="absolute inset-0 w-4 h-4 bg-primary rounded-full animate-ping opacity-20"></div>
+                   </div>
+                   <span className="text-sm font-bold tracking-wider text-primary group-hover:text-accent transition-colors duration-300">{t('hero.status')}</span>
+                   <Heart className="w-5 h-5 text-accent animate-pulse group-hover:scale-125 transition-transform duration-300" />
                  </div>
                </div>
             </div>

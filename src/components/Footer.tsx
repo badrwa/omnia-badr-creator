@@ -35,7 +35,7 @@ const Footer = () => {
                 href="https://github.com/badrmoutaouakil"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-gradient-card border-2 border-primary/30 backdrop-blur-xl rounded-xl flex items-center justify-center text-foreground hover:bg-gradient-primary hover:text-primary-foreground hover:scale-110 hover:shadow-neon transition-all duration-300 group shadow-card"
+                className="w-14 h-14 bg-card/50 backdrop-blur-md rounded-xl flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300 group"
                 title="GitHub"
               >
                 <Github className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
@@ -44,14 +44,14 @@ const Footer = () => {
                 href="https://linkedin.com/in/badrmoutaouakil"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-gradient-card border-2 border-secondary/30 backdrop-blur-xl rounded-xl flex items-center justify-center text-foreground hover:bg-gradient-accent hover:text-accent-foreground hover:scale-110 hover:shadow-neon transition-all duration-300 group shadow-card"
+                className="w-14 h-14 bg-card/50 backdrop-blur-md rounded-xl flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300 group"
                 title="LinkedIn"
               >
                 <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
               <a
                 href="mailto:b.moutawakil.at@gmail.com"
-                className="w-14 h-14 bg-gradient-card border-2 border-accent/30 backdrop-blur-xl rounded-xl flex items-center justify-center text-foreground hover:bg-gradient-primary hover:text-primary-foreground hover:scale-110 hover:shadow-neon transition-all duration-300 group shadow-card"
+                className="w-14 h-14 bg-card/50 backdrop-blur-md rounded-xl flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300 group"
                 title="Email"
               >
                 <Mail className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
