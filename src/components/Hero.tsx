@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Code, Sparkles, Star, Zap, Trophy, GraduationCap, Briefcase, Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";

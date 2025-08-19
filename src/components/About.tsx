@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, MapPin, User, Target, Star, Heart, Calendar } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
